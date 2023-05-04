@@ -1,0 +1,44 @@
+target: "http://localhost:3030"
+phases:
+  - duration: 60
+    arrivalRate: 10
+defaults:
+  headers:
+    Content-Type: "application/json"
+scenarios:
+  - name: "Prueba de estudiante"
+    flow:
+      - get:
+          url: "/api/estudiantes"
+      - post:
+          url: "/api/estudiantes/nuevoEstudiante"
+          json:
+            nombre: "Juan Alcantara"
+            rut: "19.247.653-6"
+            carrera: "Ingenieria Civil"
+      - put:
+          url: "/api/estudiantes/editarEstudiante/4"
+          json:
+            nombre: "Diego Gonzales"
+            rut: "19.767.353-4"
+            carrera: "Ingenieria Civil"
+      - delete:
+          url: "/api/estudiantes/eliminarEstudiante/4"
+  - name: "Prueba de estudiante con diferente entrada"
+    flow:
+      - get:
+          url: "/api/estudiantes"
+      - post:
+          url: "/api/estudiantes/nuevoEstudiante"
+          json:
+            nombre: "Mauricio Pinilla"
+            rut: "20.226.133-4"
+            carrera: "Arquitectura"
+      - put:
+          url: "/api/estudiantes/editarEstudiante/2"
+          json:
+            nombre: "Sara Ramirez"
+            rut: "20.193.203-7"
+            carrera: "Derecho"
+      - delete:
+          url: "/api/estudiantes/eliminarEstudiante/2"
