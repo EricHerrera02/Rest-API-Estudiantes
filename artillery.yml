@@ -15,13 +15,13 @@ scenarios:
           json:
             nombre: "Juan Alcantara"
             rut: "19.247.653-6"
-            carrera: "Ingenieria Civil"
+            carrera: 5
       - put:
           url: "/api/estudiantes/editarEstudiante/4"
           json:
             nombre: "Diego Gonzales"
             rut: "19.767.353-4"
-            carrera: "Ingenieria Civil"
+            carrera: 3
       - delete:
           url: "/api/estudiantes/eliminarEstudiante/4"
   - name: "Prueba de estudiante con diferente entrada"
@@ -33,12 +33,12 @@ scenarios:
           json:
             nombre: "Mauricio Pinilla"
             rut: "20.226.133-4"
-            carrera: "Arquitectura"
+            carrera: 5
       - put:
           url: "/api/estudiantes/editarEstudiante/2"
           json:
             nombre: "Sara Ramirez"
             rut: "20.193.203-7"
-            carrera: "Derecho"
+            carrera: 6
       - delete:
           url: "/api/estudiantes/eliminarEstudiante/2"

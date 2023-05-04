@@ -2,7 +2,7 @@ API de estudiantes
 
 Descripción
 
-API RESTful para manejo de estudiantes en una base de datos. La API permite realizar las operaciones básicas de CRUD (Create, Read, Update, Delete) sobre los estudiantes.
+API RESTful para manejo de estudiantes, para este caso practico no se utilizo una base de datos como tal, pero se utilizan archivos JSON con los datos de los estudiantes y los datos de las carreras. La API permite realizar las operaciones básicas de CRUD (Create, Read, Update, Delete) sobre los estudiantes.
 
 ##Instalación
 Ejecutar el comando `npm install` para descargar las dependencias de Node.js.

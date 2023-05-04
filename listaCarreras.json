@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "nombre": "Ingeniería de Sistemas",
+      "semestres": 10
+    },
+    {
+      "id": 2,
+      "nombre": "Medicina",
+      "semestres": 12
+    },
+    {
+      "id": 3,
+      "nombre": "Derecho",
+      "semestres": 10
+    },
+    {
+      "id": 4,
+      "nombre": "Arquitectura",
+      "semestres": 10
+    },
+    {
+      "id": 5,
+      "nombre": "Psicología",
+      "semestres": 8
+    },
+    {
+      "id": 6,
+      "nombre": "Contaduría Pública",
+      "semestres": 8
+    }
+  ]
