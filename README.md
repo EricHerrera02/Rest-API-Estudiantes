@@ -7,6 +7,7 @@ API RESTful para manejo de estudiantes, para este caso practico no se utilizo un
 ##Instalación
 Ejecutar el comando `npm install` para descargar las dependencias de Node.js.
 Levantar la API con el comando `npm start`.
+Ejecutar el comando `npm i -g artillery` para descargar artillery.
 Ejecutar las pruebas con el comando `artillery run artillery.yml --target http://localhost:3030`.
 
 Rutas
