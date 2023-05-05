@@ -34,6 +34,18 @@ scenarios:
             nombre: "Mauricio Pinilla"
             rut: "20.226.133-4"
             carrera: 5
+      - post:
+          url: "/api/estudiantes/nuevoEstudiante"
+          json:
+            nombre: "Jorge Perez"
+            rut: "18.678.945-3"
+            carrera: 4
+      - post:
+          url: "/api/estudiantes/nuevoEstudiante"
+          json:
+            nombre: "María González"
+            rut: "17.543.210-9"
+            carrera: 2     
       - put:
           url: "/api/estudiantes/editarEstudiante/2"
           json:
